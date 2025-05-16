@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:runway_fashion_app/core/widget/custom_app_bar_widget.dart';
-
-import '../../data/model/product_model.dart';
-import '../widgets/product_item_widget.dart';
+import 'package:runway_fashion_app/feature/product/data/model/product_model.dart';
+import '../widgets/list_item_product_widget.dart';
+import '../widgets/sort_by_row_widget.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({super.key});
@@ -18,27 +18,14 @@ class ProductScreen extends StatelessWidget {
         title: categoryName ?? "",
         actionImage: "assets/image/lock.svg",
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 11.5).r,
-        child: GridView.builder(
-          physics:BouncingScrollPhysics(),
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-          childAspectRatio: 1/1.6,
-          crossAxisSpacing: 5.w
-          ),
-         itemCount: 16,
-          itemBuilder: (context, index) =>
-
-           ProductItemWidget(
-            productModel: ProductModel(
-              image: "assets/image/man/m1.png",
-              name: "Top man black",
-              price: "£20",
-            ),
-          ),
-        ),
+      body: Column(
+        children: [
+          SortByRowWidget(),
+        SizedBox(height: 15.h,),
+          Expanded(child: ListItemProductWidget(name: categoryName,)),
+        ],
       ),
     );
   }
 }
+
