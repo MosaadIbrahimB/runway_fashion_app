@@ -5,8 +5,14 @@ class Assets {
   static const String categoriesDeals = 'assets/image/categories/deals.png';
   static const String categoriesHome = 'assets/image/categories/home.png';
   static const String categoriesKids = 'assets/image/categories/kids.png';
-  static const String categoriesMan = 'assets/image/categories/product.png';
+  static const String categoriesMan = 'assets/image/categories/man.png';
   static const String categoriesWoman = 'assets/image/categories/woman.png';
+  static const String deliveryBrand = 'assets/image/delivery/brand.png';
+  static const String deliveryFreeDelivery = 'assets/image/delivery/free_delivery.png';
+  static const String deliveryFreeReturn = 'assets/image/delivery/free_return.png';
+  static const String deliveryHistory = 'assets/image/delivery/history.png';
+  static const String deliveryProductDetails = 'assets/image/delivery/product_details.png';
+  static const String deliverySizeAndFit = 'assets/image/delivery/size_and_fit.png';
   static const String imageAppbarMenu = 'assets/image/appbar_menu.svg';
   static const String imageArrow = 'assets/image/arrow.svg';
   static const String imageBellAppbar = 'assets/image/bell-appbar.svg';
@@ -21,12 +27,12 @@ class Assets {
   static const String imagePeson = 'assets/image/peson.svg';
   static const String imageSort = 'assets/image/sort.svg';
   static const String imageVideo = 'assets/image/video.mov';
-  static const String manM1 = 'assets/image/product/m1.png';
-  static const String manM2 = 'assets/image/product/m2.png';
-  static const String manM3 = 'assets/image/product/m3.png';
-  static const String manM4 = 'assets/image/product/m4.png';
-  static const String manM5 = 'assets/image/product/m5.png';
-  static const String manM6 = 'assets/image/product/m6.png';
-  static const String manShadowUnderImage = 'assets/image/product/shadow_under_image.svg';
+  static const String manM1 = 'assets/image/man/m1.png';
+  static const String manM2 = 'assets/image/man/m2.png';
+  static const String manM3 = 'assets/image/man/m3.png';
+  static const String manM4 = 'assets/image/man/m4.png';
+  static const String manM5 = 'assets/image/man/m5.png';
+  static const String manM6 = 'assets/image/man/m6.png';
+  static const String manShadowUnderImage = 'assets/image/man/shadow_under_image.svg';
 
 }

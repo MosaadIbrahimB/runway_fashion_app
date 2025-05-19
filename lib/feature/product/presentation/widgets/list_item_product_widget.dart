@@ -19,7 +19,7 @@ final String?name;
           physics: BouncingScrollPhysics(),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            childAspectRatio: 1 / 1.6,
+            childAspectRatio: (1 / 1.3).r,
             crossAxisSpacing: 5.w,
             mainAxisSpacing: 20.h,
           ),
