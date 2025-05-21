@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:video_player/video_player.dart';
 
 class CustomVideoWidget extends StatefulWidget {
+
   const CustomVideoWidget({super.key});
 
   @override
@@ -26,6 +27,7 @@ class CustomVideoWidgetState extends State<CustomVideoWidget> {
             });
           });
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -71,19 +73,8 @@ class CustomVideoWidgetState extends State<CustomVideoWidget> {
   @override
   void dispose() {
     _controller.dispose();
+
     super.dispose();
   }
 }
 
-// floatingActionButton: FloatingActionButton(
-//   onPressed: () {
-//     setState(() {
-//       _controller.value.isPlaying
-//           ? _controller.pause()
-//           : _controller.play();
-//     });
-//   },
-//   child: Icon(
-//     _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
-//   ),
-// ),

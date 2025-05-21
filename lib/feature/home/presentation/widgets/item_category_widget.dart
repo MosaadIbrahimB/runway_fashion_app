@@ -14,7 +14,7 @@ class ItemCategoryWidget extends StatelessWidget {
     return GestureDetector(
       onTap: (){
         print(categoryModel.name);
-        Navigator.pushNamed(
+        Navigator.pushReplacementNamed(
             context, AppRoute.product, arguments: categoryModel.name);
       },
       child: SizedBox(
